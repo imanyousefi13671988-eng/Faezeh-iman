@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>دعوت عروسی فائزه و ایمان</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:'Vazirmatn',Tahoma,sans-serif;
+    background:#fffaf2;
+    color:#7a5a15;
+    text-align:center;
+}
+
+/* صفحه پاکت */
+.cover{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:
+    radial-gradient(circle,#fff,#fff7e8);
+}
+
+.envelope{
+    width:280px;
+    height:450px;
+    background:#fff;
+    border:3px solid #d4af37;
+    border-radius:20px;
+    box-shadow:0 0 35px rgba(212,175,55,.35);
+    padding:35px 20px;
+    position:relative;
+}
+
+.envelope:before,
+.envelope:after{
+    content:"🌸";
+    position:absolute;
+    font-size:45px;
+}
+
+.envelope:before{
+    top:15px;
+    right:15px;
+}
+
+.envelope:after{
+    bottom:15px;
+    left:15px;
+}
+
+.seal{
+    margin:80px auto 30px;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#d4af37;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+}
+
+button{
+    background:#d4af37;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+
+/* صفحه اصلی */
+
+.main{
+    display:none;
+    padding:30px 15px;
+}
+
+.title{
+    font-size:35px;
+    color:#c49a24;
+}
+
+.card{
+    max-width:500px;
+    margin:25px auto;
+    background:white;
+    border:1px solid #d4af37;
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    direction:ltr;
+}
+
+.box{
+    width:70px;
+    padding:15px 5px;
+    border:2px solid #d4af37;
+    border-radius:15px;
+}
+
+.number{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.footer{
+    margin-top:40px;
+    font-size:18px;
+    line-height:2;
+}
+
+.gold{
+    color:#c49a24;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="cover" id="cover">
+
+<div class="envelope">
+
+<div class="seal">
+💍
+</div>
+
+<h2>فائزه ✦ ایمان</h2>
+
+<p>
+دعوت‌نامه عروسی
+</p>
+
+<button onclick="openInvite()">
+باز کردن پاکت ✉️
+</button>
+
+</div>
+
+</div>
+
+
+
+<div class="main" id="main">
+
+<h1 class="title">
+🤍 به نام خدا 🤍
+</h1>
+
+
+<div class="card">
+
+<h1>
+فائزه و ایمان
+</h1>
+
+<p>
+دو قلب، یک عشق، یک آغاز...
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2 class="gold">
+⏳ تا آغاز جشن
+</h2>
+
+
+<div class="countdown">
+
+<div class="box">
+<div class="number" id="sec">00</div>
+ثانیه
+</div>
+
+<div class="box">
+<div class="number" id="min">
