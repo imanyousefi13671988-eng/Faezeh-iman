@@ -1,23 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فائزه و ایمان</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
-<img src="invitation.jpg" class="bg">
+<!-- پاکت -->
+<div class="envelope-screen" id="envelopeScreen">
 
-<div id="countdown">
-    <div><span id="days">00</span><small>روز</small></div>
-    <div><span id="hours">00</span><small>ساعت</small></div>
-    <div><span id="minutes">00</span><small>دقیقه</small></div>
-    <div><span id="seconds">00</span><small>ثانیه</small></div>
+    <div class="envelope">
+        <div class="flowers">🌸✨🌸</div>
+        <div class="seal">F ✦ I</div>
+
+        <h2>فائزه و ایمان</h2>
+
+        <button onclick="openEnvelope()">
+            باز کردن دعوت‌نامه ✉️
+        </button>
+    </div>
+
 </div>
 
-<audio id="music" controls>
-    <source src="music/raz.mp3" type="audio/mpeg">
-</audio>
 
-<a class="route"
+<!-- دعوت -->
+<div class="invite" id="invite">
+
+<img src="invitation.jpg" class="invite-image">
+
+
+<!-- شمارش روی عکس -->
+<div class="countdown">
+
+<div>
+<span id="days">00</span>
+<small>روز</small>
+</div>
+
+<div>
+<span id="hours">00</span>
+<small>ساعت</small>
+</div>
+
+<div>
+<span id="minutes">00</span>
+<small>دقیقه</small>
+</div>
+
+<div>
+<span id="seconds">00</span>
+<small>ثانیه</small>
+</div>
+
+</div>
+
+
+<!-- مسیر -->
+<a class="location"
 href="https://nshn.ir/4d_bf9Do5GSUj5"
 target="_blank">
-مشاهده مسیر در نشان
+
+📍 مشاهده مسیر
+
 </a>
 
-</body>
+
+<audio id="music">
+<source src="raz.mp3" type="audio/mpeg">
+</audio>
+
+
+</div>
+
+
 <script src="script.js"></script>
+
+</body>
+</html>
