@@ -1,28 +1,50 @@
-const target = new Date("2026-09-20T20:00:00");
+function openEnvelope(){
 
-setInterval(() => {
+document.getElementById("envelopeScreen").style.display="none";
 
-const now = new Date();
+document.getElementById("invite").style.display="block";
 
-const diff = target - now;
 
-document.getElementById("days").innerHTML =
-Math.floor(diff/86400000);
+// شروع موزیک از ثانیه ۴
+let music=document.getElementById("music");
 
-document.getElementById("hours").innerHTML =
-Math.floor(diff/3600000)%24;
+music.currentTime=4;
 
-document.getElementById("minutes").innerHTML =
-Math.floor(diff/60000)%60;
+music.play();
 
-document.getElementById("seconds").innerHTML =
-Math.floor(diff/1000)%60;
+}
+
+
+
+// شمارش معکوس
+
+let target=new Date("2026-09-20T20:00:00");
+
+
+setInterval(()=>{
+
+let now=new Date();
+
+let diff=target-now;
+
+
+if(diff<=0)return;
+
+
+document.getElementById("days").innerHTML=
+Math.floor(diff/(1000*60*60*24));
+
+
+document.getElementById("hours").innerHTML=
+Math.floor(diff/(1000*60*60)%24);
+
+
+document.getElementById("minutes").innerHTML=
+Math.floor(diff/(1000*60)%60);
+
+
+document.getElementById("seconds").innerHTML=
+Math.floor(diff/1000%60);
+
 
 },1000);
-
-const music=document.getElementById("music");
-
-music.addEventListener("play",()=>{
-if(music.currentTime<4)
-music.currentTime=4;
-});
